@@ -4,4 +4,3 @@ const obj = {
   b: '123',
 }
 console.log(obj)
-12
