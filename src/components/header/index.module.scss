@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 
 .header {
-  width: 1920px;
+  width: 100vw;
   height: 150px;
   display: flex;
   align-items: center;
@@ -35,10 +35,12 @@
         text-decoration: none;
         color: $blackText;
         padding: 8px 24px;
+        transition: 0.5s;
 
         &:hover {
-          background-color: #e9eaf9;
+          background-color: $activeSection;
           border-radius: 4px;
+          transition: 0.5s;
         }
       }
     }
@@ -53,16 +55,16 @@
 
       & span {
         grid-area: span;
-      }
 
-      & span:nth-child(2) {
-        font-size: 18px;
-        font-weight: 600;
-      }
+        &:nth-child(2) {
+          font-size: 18px;
+          font-weight: 600;
+        }
 
-      & span:nth-child(3) {
-        font-size: 14px;
-        color: $grayText;
+        &:nth-child(3) {
+          font-size: 14px;
+          color: $grayText;
+        }
       }
     }
   }
