@@ -12,7 +12,7 @@ export function Preview() {
     const month = new Date().getMonth() + 1
     const day = new Date().getDate()
 
-    return `${day}.${month < 10 ? '0' + month : month}.${year}`
+    return `${day < 10 ? '0' + day : day}.${month < 10 ? '0' + month : month}.${year}`
   }
 
   return (
