@@ -1,69 +1,63 @@
 @import '../../styles/variables.scss';
 
 .header {
+  width: 1400px;
   height: 150px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 auto;
 
-  &Section {
-    width: 1400px;
-    height: 42px;
+  &Logo {
+    width: 397px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: 24px;
 
-    &Logo {
-      width: 397px;
-      display: flex;
-      gap: 24px;
-
-      & span {
-        font-size: 14px;
-      }
+    & span {
+      font-size: 14px;
     }
+  }
 
-    &Nav {
-      display: flex;
-      gap: 24px;
+  &Nav {
+    display: flex;
+    gap: 24px;
 
-      & a {
-        font-size: 18px;
-        font-weight: 500;
-        text-decoration: none;
-        color: $blackText;
-        padding: 8px 24px;
+    & a {
+      font-size: 18px;
+      font-weight: 500;
+      text-decoration: none;
+      color: $blackText;
+      padding: 8px 24px;
+      transition: 0.5s;
+
+      &:hover {
+        background-color: $activeSection;
+        border-radius: 4px;
         transition: 0.5s;
-
-        &:hover {
-          background-color: $activeSection;
-          border-radius: 4px;
-          transition: 0.5s;
-        }
+        color: $hoverNav;
       }
     }
+  }
 
-    &Phone {
-      display: grid;
-      grid-template-areas: 'img span' 'img span';
+  &Phone {
+    display: grid;
+    grid-template-areas: 'img span' 'img span';
 
-      & img {
-        grid-area: img;
+    & img {
+      grid-area: img;
+    }
+
+    & span {
+      grid-area: span;
+
+      &:nth-child(2) {
+        font-size: 18px;
+        font-weight: 600;
       }
 
-      & span {
-        grid-area: span;
-
-        &:nth-child(2) {
-          font-size: 18px;
-          font-weight: 600;
-        }
-
-        &:nth-child(3) {
-          font-size: 14px;
-          color: $grayText;
-        }
+      &:nth-child(3) {
+        font-size: 14px;
+        color: $grayText;
       }
     }
   }

@@ -11,10 +11,18 @@ p {
 }
 
 button {
+  padding: 12px 18px;
+  border-radius: 8px;
+  background-color: $lilacTextButton;
+  border: none;
+  color: $whiteText;
+  font-size: 21px;
+  line-height: 29px;
   cursor: pointer;
   transition: 1s;
 
   &:hover {
+    background-color: $hoverButton;
     transition: 1s;
   }
 }

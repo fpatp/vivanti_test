@@ -1,7 +1,6 @@
 import styles from './index.module.scss'
 import hamster from '../../assets/images/scientific_hamster.png'
 import arrow from '../../assets/icons/arrow_button.png'
-import hamsterTester from '../../assets/images/hamster_doing_tests.png'
 
 export function Laboratory() {
   return (
@@ -41,7 +40,7 @@ export function Laboratory() {
             <img src={arrow} alt="arrow to the right" />
           </button>
         </div>
-        <img src={hamsterTester} alt="hamster laboratory assistant doing tests" />
+        <div className={styles.laboratoryDescriptionImg}></div>
       </section>
     </article>
   )

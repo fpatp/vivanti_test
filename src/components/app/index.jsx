@@ -1,6 +1,7 @@
 import { Gallery } from '../gallery'
 import { Header } from '../header'
 import { Laboratory } from '../laboratory'
+import { Preview } from '../preview'
 
 export function App() {
   return (
@@ -8,6 +9,7 @@ export function App() {
       <Header />
       <Laboratory />
       <Gallery />
+      <Preview />
     </>
   )
 }

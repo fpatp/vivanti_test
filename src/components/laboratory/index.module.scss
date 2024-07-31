@@ -88,20 +88,19 @@
 
       & button {
         width: 249px;
-        border-radius: 8px;
-        background-color: $lilacTextButton;
-        color: $whiteText;
-        padding: 12px 18px;
-        border: none;
         display: flex;
         align-items: center;
         gap: 10px;
-        line-height: 29px;
-
-        &:hover {
-          background-color: $hoverButton;
-        }
       }
+    }
+
+    &Img {
+      width: 332px;
+      height: 332px;
+      background-image: url('../../assets/images/hamster_doing_tests.png');
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
     }
   }
 }
