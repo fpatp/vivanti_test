@@ -6,15 +6,13 @@ export function Laboratory() {
   return (
     <article className={styles.laboratory}>
       <section className={styles.laboratorySlogan}>
-        <div className={styles.laboratorySloganText}>
-          <span>ТОЧНЫЕ РЕЗУЛЬТАТЫ</span>
-          <span>ТОЧНО В СРОК</span>
+        <div className={styles.laboratorySloganContent}>
+          <div className={styles.laboratorySloganContentText}>
+            <span>ТОЧНЫЕ РЕЗУЛЬТАТЫ</span>
+            <span>ТОЧНО В СРОК</span>
+          </div>
+          <img src={hamster} alt="hamster laboratory assistant" />
         </div>
-        <img
-          className={styles.laboratorySloganImg}
-          src={hamster}
-          alt="hamster laboratory assistant"
-        />
       </section>
       <section className={styles.laboratoryTitle}>
         <div className={styles.laboratoryTitleText}>

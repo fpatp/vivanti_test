@@ -13,36 +13,37 @@
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    align-items: end;
     justify-content: center;
-    gap: 285px;
 
-    &Text {
-      font-size: 48px;
-      font-weight: 700;
-      margin-bottom: 185px;
+    &Content {
+      width: 1400px;
+      display: flex;
+      align-items: end;
+      gap: 285px;
 
-      & span {
-        display: block;
-        width: fit-content;
-        padding: 12px 18px;
+      &Text {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 184px;
 
-        &:first-child {
-          color: $whiteText;
-          background-color: $lilacTextButton;
-          border-radius: 8px 8px 8px 0;
-        }
+        & span {
+          display: block;
+          width: fit-content;
+          padding: 12px 18px;
 
-        &:last-child {
-          color: $lilacTextButton;
-          background-color: $whiteText;
-          border-radius: 0 0 8px 8px;
+          &:first-child {
+            color: $whiteText;
+            background-color: $lilacTextButton;
+            border-radius: 8px 8px 8px 0;
+          }
+
+          &:last-child {
+            color: $lilacTextButton;
+            background-color: $whiteText;
+            border-radius: 0 0 8px 8px;
+          }
         }
       }
-    }
-
-    &Img {
-      margin-right: 120px;
     }
   }
 
