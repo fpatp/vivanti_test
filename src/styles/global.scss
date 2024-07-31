@@ -4,9 +4,17 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  // overflow: hidden;
 }
 
 p {
   margin-bottom: 0;
+}
+
+button {
+  cursor: pointer;
+  transition: 1s;
+
+  &:hover {
+    transition: 1s;
+  }
 }

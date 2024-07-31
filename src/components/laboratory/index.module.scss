@@ -1,7 +1,6 @@
 @import '../../styles/variables.scss';
 
 .laboratory {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   gap: 96px;
@@ -98,12 +97,9 @@
         align-items: center;
         gap: 10px;
         line-height: 29px;
-        cursor: pointer;
-        transition: 1s;
 
         &:hover {
           background-color: $hoverButton;
-          transition: 1s;
         }
       }
     }

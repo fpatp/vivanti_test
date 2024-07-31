@@ -1,0 +1,56 @@
+.gallery {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 96px;
+
+  &Section {
+    width: 1400px;
+    display: flex;
+    gap: 48px;
+    flex-direction: column;
+
+    & span {
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 44px;
+    }
+
+    &Img {
+      display: grid;
+      gap: 24px;
+      grid-template-areas:
+        'top1 top1 top2 top2'
+        'top1 top1 middle1 middle2'
+        'bottom1 bottom2 bottom3 bottom3';
+      border-radius: 8px;
+
+      &Laboratory {
+        grid-area: top1;
+      }
+
+      &Stock {
+        grid-area: top2;
+      }
+
+      &Collider {
+        grid-area: middle1;
+      }
+
+      &Microscope {
+        grid-area: middle2;
+      }
+
+      &BigMixer {
+        grid-area: bottom1;
+      }
+
+      &LittleMixer {
+        grid-area: bottom2;
+      }
+
+      &Hamster {
+        grid-area: bottom3;
+      }
+    }
+  }
+}
