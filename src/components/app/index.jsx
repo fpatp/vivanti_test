@@ -1,4 +1,5 @@
 import { ApplicationForm } from '../application-form'
+import { Footer } from '../footer'
 import { Gallery } from '../gallery'
 import { Header } from '../header'
 import { Laboratory } from '../laboratory'
@@ -12,6 +13,7 @@ export function App() {
       <Gallery />
       <Preview />
       <ApplicationForm />
+      <Footer />
     </>
   )
 }

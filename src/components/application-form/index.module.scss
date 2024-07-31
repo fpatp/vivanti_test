@@ -9,6 +9,7 @@
   align-items: center;
   gap: 48px;
   background: linear-gradient(0deg, $bgGradStart 0%, $bgGradEnd 100%);
+  border-radius: 8px;
 
   & span {
     display: block;

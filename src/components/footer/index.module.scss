@@ -1,0 +1,21 @@
+@import '../../styles/variables.scss';
+
+.footer {
+  height: 150px;
+  background-color: $hoverButton;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &Text {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+
+    & span {
+      font-size: 16px;
+      line-height: 21px;
+      color: $whiteText;
+    }
+  }
+}
