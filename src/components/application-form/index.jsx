@@ -21,7 +21,7 @@ export function ApplicationForm() {
   }
 
   return (
-    <article className={sendForm ? styles.formSend : styles.form}>
+    <article id="application-form" className={sendForm ? styles.formSend : styles.form}>
       {sendForm ? (
         <div className={styles.formSendMessage}>
           <img src={markSendForm} alt="send form" />

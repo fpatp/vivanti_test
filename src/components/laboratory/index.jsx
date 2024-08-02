@@ -4,7 +4,7 @@ import arrow from '../../assets/icons/arrow_button.png'
 
 export function Laboratory() {
   return (
-    <article className={styles.laboratory}>
+    <article id="laboratory" className={styles.laboratory}>
       <section className={styles.laboratorySlogan}>
         <div className={styles.laboratorySloganContent}>
           <div className={styles.laboratorySloganContentText}>

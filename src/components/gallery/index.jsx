@@ -9,7 +9,7 @@ import hamster from '../../assets/images/hamster_laboratory_assistant.png'
 
 export function Gallery() {
   return (
-    <article className={styles.gallery}>
+    <article id="gallery" className={styles.gallery}>
       <section className={styles.gallerySection}>
         <span>Галерея</span>
         <div className={styles.gallerySectionImg}>
