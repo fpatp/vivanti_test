@@ -10,21 +10,21 @@ import hamster from '../../assets/images/hamster_laboratory_assistant.png'
 export function Gallery() {
   return (
     <article id="gallery" className={styles.gallery}>
-      <section className={styles.gallerySection}>
+      <section className={styles.galleryContent}>
         <span>Галерея</span>
-        <div className={styles.gallerySectionImg}>
-          <img className={styles.gallerySectionImgLaboratory} src={laboratory} alt="laboratory" />
-          <img className={styles.gallerySectionImgStock} src={stock} alt="stock" />
-          <img className={styles.gallerySectionImgCollider} src={collider} alt="collider" />
-          <img className={styles.gallerySectionImgMicroscope} src={microscope} alt="microscope" />
-          <img className={styles.gallerySectionImgBigMixer} src={bigMixer} alt="big mixer" />
+        <div className={styles.galleryContentImg}>
+          <img className={styles.galleryContentImgLaboratory} src={laboratory} alt="laboratory" />
+          <img className={styles.galleryContentImgStock} src={stock} alt="stock" />
+          <img className={styles.galleryContentImgCollider} src={collider} alt="collider" />
+          <img className={styles.galleryContentImgMicroscope} src={microscope} alt="microscope" />
+          <img className={styles.galleryContentImgBigMixer} src={bigMixer} alt="big mixer" />
           <img
-            className={styles.gallerySectionImgLittleMixer}
+            className={styles.galleryContentImgLittleMixer}
             src={littleMixer}
             alt="little mixer"
           />
           <img
-            className={styles.gallerySectionImgHamster}
+            className={styles.galleryContentImgHamster}
             src={hamster}
             alt="hamster laboratory assistant"
           />
