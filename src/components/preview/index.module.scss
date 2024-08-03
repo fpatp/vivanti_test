@@ -3,15 +3,15 @@
 .preview {
   width: 1400px;
   margin: 0 auto 96px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   row-gap: 36px;
   column-gap: 40px;
 
   &Card {
     width: 440px;
     padding-bottom: 24px;
-    display: flex;
+    display: grid;
     flex-direction: column;
     gap: 18px;
     border-radius: 8px;
@@ -61,5 +61,40 @@
         }
       }
     }
+  }
+
+  @media (max-width: 1400px) {
+    width: calc(100% - 36px);
+    gap: 24px;
+
+    &Card {
+      width: 100%;
+
+      &Description {
+        &Text {
+          span:first-child {
+            font-size: 21px;
+            line-height: 29px;
+          }
+
+          span:last-child {
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+
+        &Button button {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 }
