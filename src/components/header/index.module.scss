@@ -1,8 +1,7 @@
 @import '../../styles/variables.scss';
 
 .header {
-  width: 100%;
-  height: 150px;
+  width: 100vw;
   background-color: $whiteText;
   position: fixed;
 
@@ -19,7 +18,7 @@
       display: flex;
       gap: 24px;
 
-      & span {
+      span {
         font-size: 14px;
       }
     }
@@ -51,11 +50,11 @@
       display: grid;
       grid-template-areas: 'img span' 'img span';
 
-      & img {
+      img {
         grid-area: img;
       }
 
-      & span {
+      span {
         grid-area: span;
 
         &:nth-child(2) {
@@ -67,6 +66,78 @@
           font-size: 14px;
           color: $grayText;
         }
+      }
+    }
+  }
+
+  @media (max-width: 1400px) {
+    &Content {
+      width: calc(100% - 36px);
+
+      &Nav {
+        gap: 0;
+        justify-content: center;
+        &Href,
+        &HrefActive {
+          padding: 8px 18px;
+          font-size: 14px;
+        }
+      }
+
+      &Phone span:nth-child(2) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &Content {
+      &Logo {
+        display: block;
+        width: fit-content;
+
+        span {
+          display: block;
+          width: fit-content;
+          font-size: 12px;
+        }
+      }
+
+      &Nav {
+        &Href,
+        &HrefActive {
+          padding: 8px 14px;
+          font-size: 12px;
+        }
+      }
+
+      &Phone {
+        span:nth-child(2),
+        span:nth-child(3) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    position: static;
+
+    &Content {
+      width: calc(100% - 36px);
+      height: 105px;
+      justify-content: space-between;
+
+      &Nav {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 460px) {
+    &Content {
+      &Phone span {
+        display: none;
       }
     }
   }

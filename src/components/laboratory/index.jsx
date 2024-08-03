@@ -22,9 +22,10 @@ export function Laboratory() {
         </div>
       </section>
       <section className={styles.laboratoryDescription}>
-        <div className={styles.laboratoryDescriptionText}>
+        <div className={styles.laboratoryDescriptionContent}>
           <span>Лаборатория</span>
-          <div>
+          <div className={styles.laboratoryDescriptionContentImg}></div>
+          <div className={styles.laboratoryDescriptionContentText}>
             Наша лаборатория предлагает широкий спектр медицинских исследований, проводимых опытными
             капибарами-лаборантами. Мы специализируемся на анализе биоматериалов, микробиологических
             исследованиях, генетической диагностике и многом другом.
@@ -38,7 +39,6 @@ export function Laboratory() {
             <img src={arrow} alt="arrow to the right" />
           </button>
         </div>
-        <div className={styles.laboratoryDescriptionImg}></div>
       </section>
     </article>
   )
