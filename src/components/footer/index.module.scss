@@ -18,4 +18,26 @@
       color: $whiteText;
     }
   }
+
+  @media (max-width: 1400px) {
+    &Text {
+      width: calc(100% - 36px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: fit-content;
+    &Text {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 18px;
+      margin: 24px 0;
+
+      span {
+        text-align: center;
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
 }

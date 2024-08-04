@@ -34,10 +34,10 @@ export function Laboratory() {
               результатов.
             </p>
           </div>
-          <button>
+          <a className={styles.laboratoryDescriptionContentHref} href="#application-form">
             Оставить заявку
             <img src={arrow} alt="arrow to the right" />
-          </button>
+          </a>
         </div>
       </section>
     </article>

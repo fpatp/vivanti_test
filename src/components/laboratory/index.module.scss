@@ -96,14 +96,6 @@
         grid-area: middle1;
       }
 
-      button {
-        width: 249px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        grid-area: bottom1;
-      }
-
       &Img {
         width: 332px;
         height: 332px;
@@ -112,6 +104,28 @@
         background-position: center;
         border-radius: 8px;
         grid-area: top2;
+      }
+
+      &Href {
+        width: 249px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        grid-area: bottom1;
+        text-decoration: none;
+        padding: 12px 18px;
+        border-radius: 8px;
+        background-color: $lilacTextButton;
+        border: none;
+        color: $whiteText;
+        font-size: 21px;
+        line-height: 29px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $hoverButton;
+          transition: 1s;
+        }
       }
     }
   }
@@ -230,7 +244,7 @@
           line-height: 34px;
         }
 
-        button {
+        &Href {
           width: 206px;
           font-size: 16px;
           line-height: 22px;
